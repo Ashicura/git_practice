@@ -21,7 +21,7 @@
 .sidebarSearch{
     display: flex;
     align-items: center;
-    background-color:rgba(240, 245, 244, 0.603);
+    background-color:rgba(206, 209, 209, 0.603);
     height: 39px;
     padding: 10px;
     border-right: 1px solid lightgray;
