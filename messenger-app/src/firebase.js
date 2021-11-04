@@ -1,7 +1,8 @@
 import { getFirestore } from 'firebase/firestore/lite';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import 'firebase/firestore';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+import { getAnalytics } from "firebase/analytics";
+//import firebase from 'firebase/compat/app';
 
 
 const firebaseConfig = {
@@ -22,10 +23,12 @@ const firebaseConfig = {
 
   const provider = new GoogleAuthProvider();
 
+  const analytics = getAnalytics(app);
+
 
  // const app = firebase.initializeApp(firebaseConfig);
  // const db = app.firestore();
- //const auth = firebase.auth();
+ // const auth = firebase.auth();
  // const provider = new firebase.auth.GoogleAuthProvider();
 
   
